@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- 告訴瀏覽器這是 HTML5 網頁 -->
+<html lang="zh-Hant"> <!-- 網頁開始，語言設定為繁體中文 -->
+<head> <!-- 網頁的設定區（不會顯示在畫面上） -->
+  <meta charset="UTF-8"> <!-- 使用 UTF-8 編碼，中文才不會變亂碼 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 讓網頁在手機、平板上正確縮放 -->
+  <title>我的角色奔跑動畫</title> <!-- 瀏覽器分頁上顯示的標題 -->
+  <!-- 從網路載入 p5.js 函式庫，一定要放在 sketch.js 之前 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <style> /* 以下是 CSS 樣式設定 */
+    html, body { /* 設定整個網頁與 body 的樣式 */
+      margin: 0; /* 去掉預設的外距，畫布才能貼齊視窗邊緣 */
+      padding: 0; /* 去掉預設的內距 */
+      overflow: hidden; /* 隱藏捲軸，避免全螢幕畫布出現滾動條 */
+      background: #edf2fb; /* 網頁背景色與畫布相同 */
+    }
+    canvas { /* 設定 p5.js 產生的畫布 */
+      display: block; /* 讓畫布變成區塊，避免下方多出一小段空白 */
+    }
+  </style>
+</head>
+<body> <!-- 網頁的顯示區 -->
+  <!-- 載入你的程式碼（sketch.js 要和這個檔案放在同一個資料夾） -->
+  <script src="sketch.js"></script>
+</body>
+</html>
